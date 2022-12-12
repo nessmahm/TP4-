@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Students per courses";
+}
+
+
+<div class="container">
+    @foreach (var students in ViewBag.students)
+    {
+        <div class="carte">
+            <div class="carte-text">
+                <p>
+                    <h4>First name: </h4> @students.First_name <br></br>
+                    <h4>Last name : </h4> @students.Last_name <br></br>
+                    <h4>Phone_number: </h4> @students.Phone_number <br></br>
+                    <h4>University: </h4> @students.University <br></br>
+                    <h4>Timestamp: </h4> @students.Timestamp <br></br>
+                    <h4>Course : </h4> @students.Course <br></br>
+
+                </p>
+            </div>
+        </div>
+    }
+</div>

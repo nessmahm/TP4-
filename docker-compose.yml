@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  tp4-:
+    image: ${DOCKER_REGISTRY-}tp4
+    build:
+      context: .
+      dockerfile: TP4-\Dockerfile
